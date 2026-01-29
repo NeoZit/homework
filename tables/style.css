@@ -1,0 +1,32 @@
+table {
+  margin: 50px;
+  border-collapse: collapse;
+  font-size: 30px;
+}
+
+caption {
+  border: 1px solid black;
+  border-bottom: 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+}
+
+th:nth-child(6),
+th:nth-child(7),
+td:nth-child(6),
+td:nth-child(7),
+.today {
+  color: red;
+}
