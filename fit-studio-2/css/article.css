@@ -1,0 +1,153 @@
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.article {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.title {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title--large {
+  font-size: 48px;
+}
+
+.title--medium {
+  font-size: 36px;
+}
+
+.article__section:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.article__decor-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.article__decor-wrapper--mb {
+  margin-bottom: 80px;
+}
+
+.article__decor-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url("../images/decor-icon.svg") no-repeat;
+  width: 528px;
+  height: 48px;
+}
+
+.article__decor-wrapper-left::before {
+  top: 100px;
+  left: -350px;
+}
+
+.article__decor-wrapper-right::before {
+  right: -350px;
+  bottom: 136px;
+}
+
+.article__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.article__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.article__img--mb {
+  margin-bottom: 80px;
+}
+
+.article__img,
+.article__video {
+  width: 100%;
+}
+
+.article__list {
+  margin-top: 0;
+}
+
+.article__item {
+  position: relative;
+  padding-left: 16px;
+  list-style: none;
+}
+
+.article__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #3596ed;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.article__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.article__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-color: #3596ed;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.article__video {
+}
