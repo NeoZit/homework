@@ -83,7 +83,7 @@
   position: absolute;
   right: -10px;
   top: -10px;
-  background-image: url("/icons/icon-btn.png");
+  background-image: url("../../icons/icon-btn.png");
   width: 101px;
   height: 104px;
   display: block;
