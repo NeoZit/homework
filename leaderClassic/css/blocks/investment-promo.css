@@ -1,0 +1,151 @@
+.investment-promo {
+  padding: 122px 0;
+}
+
+@media (width < 768px) {
+  .investment-promo {
+    padding: 61px 0;
+  }
+}
+
+.investment-promo--reversed .investment-promo__inner {
+  flex-direction: row-reverse;
+  gap: 78px;
+}
+
+@media (width < 1024px) {
+  .investment-promo--reversed .investment-promo__inner {
+    flex-direction: column-reverse;
+  }
+}
+.investment-promo__container {
+}
+.container {
+}
+.investment-promo__inner {
+  display: flex;
+  align-items: center;
+}
+
+@media (width < 768px) {
+  .investment-promo__inner {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.investment-promo__info {
+  max-width: 550px;
+}
+.investment-promo__title {
+  margin-bottom: 25px;
+  text-align: left;
+}
+.title {
+}
+.investment-promo__text {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.subtitle {
+}
+.investment-promo__btns {
+  display: flex;
+  gap: 20px;
+}
+@media (width < 576px) {
+  .investment-promo__btns {
+    flex-direction: column;
+  }
+}
+.investment-promo__btn {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  padding: 24px 10px;
+  font-size: 16px;
+  line-height: 126%;
+  color: var(--main-color);
+  position: relative;
+  max-width: 245px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: border var(--transition-time);
+}
+@media (any-hover: hover) {
+  .investment-promo__btn:hover {
+    border: 2px solid rgb(255, 255, 255);
+  }
+}
+@media (width < 576px) {
+  .investment-promo__btn {
+    max-width: none;
+  }
+}
+.investment-promo__btn::before {
+  content: "";
+  width: 15px;
+  height: 19px;
+  display: inline-block;
+  flex: 0 0 20px;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+.investment-promo__btn--ios::before {
+  background-image: url("../../icons/investment-promo-apple.svg");
+}
+.investment-promo__btn--android::before {
+  background-image: url("../../icons/investment-promo-android.svg");
+}
+.investment-promo__image {
+  position: relative;
+}
+
+.investment-promo__image::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 0;
+  background-image: url("../../icons/investment-promo-icon-1.svg");
+  width: 1260px;
+  height: 1276px;
+  z-index: -1;
+}
+
+.investment-promo--reversed .investment-promo__image::after {
+  top: -60%;
+  right: -10%;
+  background-image: url("../../icons/investment-promo-icon-2.svg");
+  width: 1130px;
+  height: 1276px;
+}
+@media (width < 1600px) {
+  .investment-promo__image::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (width < 1400px) {
+  .investment-promo--reversed .investment-promo__image::after {
+    top: -100%;
+    right: -50%;
+  }
+}
+@media (width < 1200px) {
+  .investment-promo--reversed .investment-promo__image::after {
+    top: -150%;
+    right: -90%;
+  }
+}
+@media (width < 1024px) {
+  .investment-promo--reversed .investment-promo__image::after {
+    top: 0;
+    right: 0;
+  }
+}
+@media (width < 768px) {
+  .investment-promo__image::after {
+    display: none;
+  }
+}
+.investment-promo__img {
+}

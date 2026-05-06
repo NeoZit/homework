@@ -1,0 +1,1609 @@
+<!doctype html>
+<html
+  lang="ru"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Leader Classic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/imask"
+    ></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrapper">
+          <button class="header__burger burger">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="burger__icon-menu"
+            >
+              <mask
+                id="mask0_113_387"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="16"
+                height="16"
+              >
+                <rect
+                  width="16"
+                  height="16"
+                  fill="url(#pattern0_113_387)"
+                />
+              </mask>
+              <g mask="url(#mask0_113_387)">
+                <rect
+                  x="-2"
+                  y="-2"
+                  width="24"
+                  height="25"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <pattern
+                  id="pattern0_113_387"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_113_387"
+                    transform="scale(0.00195312)"
+                  />
+                </pattern>
+                <image
+                  id="image0_113_387"
+                  width="512"
+                  height="512"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="burger__icon-close"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <a
+            href="#"
+            class="header__logo logo"
+            ><img
+              src="./images/logo.png"
+              alt="логотип сайта"
+              class="logo__img"
+              width="162"
+              height="26"
+          /></a>
+          <div class="header__box">
+            <form class="header__lang lang">
+              <select
+                name="languages"
+                class="lang__select"
+              >
+                <option
+                  value="ru"
+                  class="lang__option"
+                >
+                  RU
+                </option>
+                <option
+                  value="us"
+                  class="lang__option"
+                >
+                  US
+                </option>
+                <option
+                  value="eu"
+                  class="lang__option"
+                >
+                  EU
+                </option>
+              </select>
+            </form>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    class="menu__link"
+                    >Тарифы</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    class="menu__link"
+                    >Бонус</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    class="menu__link"
+                    >Реферальная</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    class="menu__link"
+                    >Контакты</a
+                  >
+                  ✨
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__actions">
+          <a
+            href="#"
+            class="header__login"
+            >Войти</a
+          >
+          <a
+            href="#"
+            class="header__account"
+            >Открыть счёт</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="promo">
+        <div class="promo__container container">
+          <div class="promo__wrapper">
+            <img
+              src="./icons/gift.png"
+              alt="подарок"
+              class="promo__img"
+            />
+            <div class="promo__info">
+              <div class="promo__title">
+                Станьте миллионером с Leader Classic
+              </div>
+              <div class="promo__text">
+                Откройте счет, инвестируйте в фонды Leader Classic и получите
+                шанс выиграть один из 100 000 000 ₽
+              </div>
+            </div>
+          </div>
+          <div class="promo__timer timer">
+            <div class="timer__item">
+              <div class="timer__value">27</div>
+              <div class="timer__label">д</div>
+            </div>
+            <div class="timer__separator">:</div>
+            <div class="timer__item">
+              <div class="timer__value">07</div>
+              <div class="timer__label">д</div>
+            </div>
+            <div class="timer__separator">:</div>
+            <div class="timer__item">
+              <div class="timer__value">40</div>
+              <div class="timer__label">м</div>
+            </div>
+            <div class="timer__separator">:</div>
+            <div class="timer__item">
+              <div class="timer__value">49</div>
+              <div class="timer__label">с</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__wrapper">
+            <div class="hero__info">
+              <h1 class="hero__title">
+                ТОП-5 акций с доходностью до 10-30% уже в 2022 году
+              </h1>
+              <div class="hero__box">
+                <ul class="hero__list">
+                  <li class="hero__item">
+                    Открытие брокерского счета за 5 минут без визита в офис
+                  </li>
+                  <li class="hero__item">
+                    Доступ к ценным бумагам с любого устройства
+                  </li>
+                  <li class="hero__item">Поддержка в чате 24/7</li>
+                </ul>
+
+                <svg
+                  class="hero__arrow"
+                  width="42"
+                  height="156"
+                  viewBox="0 0 42 156"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.5781 155.472C38.3963 155.602 39.1649 155.044 39.2949 154.226L41.4132 140.893C41.5432 140.075 40.9853 139.306 40.1672 139.176C39.349 139.046 38.5804 139.604 38.4504 140.422L36.5674 152.273L24.7161 150.391C23.8979 150.261 23.1293 150.818 22.9993 151.637C22.8693 152.455 23.4272 153.223 24.2454 153.353L37.5781 155.472ZM25.1862 2.3689e-06C5.58941 31.843 -2.1089 56.2358 0.488166 79.9591C3.07886 103.624 15.8922 126.341 36.5995 154.871L39.0274 153.109C18.3509 124.621 5.96887 102.456 3.47035 79.6326C0.978215 56.8679 8.29689 33.1675 27.7411 1.57235L25.1862 2.3689e-06Z"
+                    fill="url(#paint0_linear_113_345)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_113_345"
+                      x1="36.8037"
+                      y1="158.276"
+                      x2="19.3258"
+                      y2="4.82768"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        stop-color="white"
+                        offset="1"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="white"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="hero__btns">
+                <a
+                  href="#"
+                  class="hero__btn btn btn--accent hero__btn--image"
+                  >Скачать ТОП-5 акций</a
+                ><a
+                  href="#"
+                  class="hero__btn btn"
+                  >Открыть счёт</a
+                >
+              </div>
+              <div class="hero__users">
+                <div class="hero__avatars">
+                  <img
+                    src="images/avatar-1.jpg"
+                    alt="аватар"
+                    class="hero__avatar"
+                  />
+                  <img
+                    src="images/avatar-2.jpg"
+                    alt="аватар"
+                    class="hero__avatar"
+                  />
+                  <img
+                    src="images/avatar-3.jpg"
+                    alt="аватар"
+                    class="hero__avatar"
+                  />
+                </div>
+                <p class="hero__users-text">
+                  <span>Сейчас инвестируют</span> 100 000+ пользователей
+                </p>
+              </div>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source
+                  srcset="./images/hero-phone-1024.png"
+                  type="image/png"
+                  media="(max-width: 1024px)"
+                />
+                <img
+                  src="images/hero-phone.png"
+                  alt="рука с телефоном"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__container container">
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title title">
+              Ваши деньги способны на большее
+            </h2>
+            <p class="catalog__subtitle subtitle">
+              Сколько бы вы заработали, инвестируй <span>100 000 ₽</span> год
+              назад?
+            </p>
+
+            <div class="catalog__slider">
+              <div class="swiper slider-catalog">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper slider-catalog__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-1.png"
+                        alt="тесла"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+83.97%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-2.png"
+                        alt="амазон"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+4.11%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-3.png"
+                        alt="эпл"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+26.36%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-4.png"
+                        alt="яндекс"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+17.19%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-5.png"
+                        alt="фейсбук"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+31.32%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                  <div class="swiper-slide slider-catalog__slide">
+                    <div class="slider-catalog__image">
+                      <img
+                        src="images/catalog-6.png"
+                        alt="майкрософт"
+                      />
+                    </div>
+                    <div class="slider-catalog__percent">+38.99%</div>
+                    <div class="slider-catalog__income">+72.000₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="catalog__more subtitle">
+              И еще более 10 000 других ценных бумаг доступно
+              <span>в каталоге</span>
+            </p>
+            <a
+              href="#"
+              class="catalog__btn btn btn--accent"
+              >Получить каталог</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="tools">
+        <div class="tools__container container">
+          <h2 class="tools__title title">Большой выбор инструментов</h2>
+          <div class="tools__box">
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="60"
+                  height="60"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5"
+                  />
+                </svg>
+              </div>
+              <h3 class="tools__name">Forex</h3>
+              <p class="tools__text">
+                Trade 70 major, minor & exotic currency pairs with competitive
+                trading conditions,
+              </p>
+            </div>
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-coins"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"
+                  />
+                  <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
+                  <path
+                    d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"
+                  />
+                  <path d="M3 6v10c0 .888 .772 1.45 2 2" />
+                  <path d="M3 11c0 .888 .772 1.45 2 2" />
+                </svg>
+              </div>
+              <h3 class="tools__name">Metals</h3>
+              <p class="tools__text">
+                Trade metal commodities such as Gold, Silver & Platinum.
+              </p>
+            </div>
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="60"
+                  height="60"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="tools__name">Indices</h3>
+              <p class="tools__text">
+                Trade Major and Minor Index CFDs Spot and Futures from around
+                the globe.
+              </p>
+            </div>
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-dna"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656"
+                  />
+                  <path d="M9.172 20.485a4 4 0 1 0 -5.657 -5.657" />
+                  <path d="M14.828 3.515a4 4 0 0 0 5.657 5.657" />
+                </svg>
+              </div>
+              <h3 class="tools__name">Cryptocurrencies</h3>
+              <p class="tools__text">
+                Trade Bitcoin, Ether, Doge & more crypto & altcoin CFDs
+              </p>
+            </div>
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="60"
+                  height="60"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+                  />
+                </svg>
+              </div>
+              <h3 class="tools__name">Shares</h3>
+              <p class="tools__text">
+                Hundreds of public companies from the US, IJK, France & Germany
+                available to trade.
+              </p>
+            </div>
+            <div class="tools__tool">
+              <div class="tools__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-bolt"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+                </svg>
+              </div>
+              <h3 class="tools__name">Energies</h3>
+              <p class="tools__text">
+                Discover opportunities on UK & US Crude Oil, as well as Natural
+                Gas Spot and Future CFDs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="investment">
+        <div class="investment__container container">
+          <h2 class="investment__title title">Инвестиции доступные каждому</h2>
+          <p class="investment__subtitle subtitle">
+            Простой сервис с подсказками и поддержкой 24/7 на каждом этапе
+          </p>
+          <div class="investment__items">
+            <div class="investment__item">
+              <div class="investment__step">ШАГ 1</div>
+              <h3 class="investment__name">Заполнить регистрационную анкету</h3>
+              <p class="investment__text">
+                Нужно указать основные данные о себе: имя, номер телефона,
+                e-mail и пароль для входа.
+              </p>
+            </div>
+            <div class="investment__item">
+              <div class="investment__step">ШАГ 2</div>
+              <h3 class="investment__name">Внести деньги на счет</h3>
+              <p class="investment__text">
+                Вы можете использовать несколько платежных систем для пополнения
+                депозита, включая систему MidexPay и кошелек Bitcoin.
+              </p>
+            </div>
+            <div class="investment__item">
+              <div class="investment__step">ШАГ 3</div>
+              <h3 class="investment__name">Приступить к онлайн-трейдингу</h3>
+              <p class="investment__text">
+                Сразу после пополнения депозита торговля через веб-терминал или
+                мобильную платформу будет доступна.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus">
+        <div class="bonus__container container">
+          <div class="bonus__wrapper">
+            <div class="bonus__text-bg">БОНУС</div>
+            <h2 class="bonus__title title">Каждый достоин второго шанса</h2>
+            <p class="bonus__text subtitle">
+              Купите свои первые акции без риска, мы вернем вам 100$ на счет в
+              случае проигрыша
+            </p>
+            <div class="bonus__btns">
+              <a
+                href="#"
+                class="bonus__btn btn btn--accent"
+                >Получить бонус</a
+              >
+              <a
+                href="#"
+                class="bonus__btn btn"
+                >Открыть демо-счёт</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__container container">
+          <div class="advantages__wrapper">
+            <h2 class="advantages__title title">
+              100 000+ клиентов уже инвестируют с нами
+            </h2>
+            <div class="advantages__items">
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-1.svg"
+                  alt="иконка земли"
+                  width="48"
+                  height="48"
+                />
+
+                <h3 class="advantages__name">
+                  Представительство компании в Европе
+                </h3>
+                <p class="advantages__text">
+                  В разных странах мира компания открывает собсвенные
+                  представительства.
+                </p>
+                <div class="advantages__link">Подробнее <span></span></div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-2.svg"
+                  alt="иконка кошелька"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="advantages__name">
+                  Мгновенный ввод и вывод средств
+                </h3>
+                <p class="advantages__text">0% комиссия с депозита</p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-3.svg"
+                  alt="иконка человечка"
+                  width="47"
+                  height="47"
+                />
+                <h3 class="advantages__name">Кредитное плечо до 1:1000</h3>
+                <p class="advantages__text"></p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-4.svg"
+                  alt="иконка часов"
+                  width="44"
+                  height="44"
+                />
+                <h3 class="advantages__name">
+                  Время выполнения заказа - 30 мс
+                </h3>
+                <p class="advantages__text">
+                  Средний показатель по отрасли - 500 мс
+                </p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-5.svg"
+                  alt="иконка инструментов"
+                  width="39"
+                  height="39"
+                />
+                <h3 class="advantages__name">250 торговых инструментов</h3>
+                <p class="advantages__text">
+                  Валютные пары, акции, металлы, индексы, облигации
+                </p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-6.svg"
+                  alt="иконка доллара"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="advantages__name">
+                  Счета в евро, рублях, долларах США
+                </h3>
+                <p class="advantages__text">
+                  Пополните свой счет и сэкономьте на сборах за конвертацию
+                </p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-7.svg"
+                  alt="иконка подарка"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="advantages__name">15% бонус на первый депозит</h3>
+                <p class="advantages__text">
+                  Может использоваться в торговле и во время просадки
+                </p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+              <a
+                href="#"
+                class="advantages__item"
+              >
+                <img
+                  class="advantages__icon"
+                  src="icons/advantages-icon-7.svg"
+                  alt="иконка подарка"
+                  width="40"
+                  height="40"
+                />
+                <h3 class="advantages__name">
+                  Инновационная торговая платформа МТ5
+                </h3>
+                <p class="advantages__text">Доступно на IOS и Android</p>
+                <div class="advantages__link">Подробнее</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="briefcase">
+        <div class="briefcase__container container">
+          <div class="briefcase__wrapper">
+            <div class="briefcase__profitability">
+              <div class="briefcase__image">
+                <svg
+                  width="958"
+                  height="958"
+                  viewBox="0 0 958 958"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="briefcase__arc"
+                >
+                  <path
+                    d="M810.828 478.939C818.069 478.939 823.965 473.064 823.69 465.828C820.395 379.092 784.494 296.591 722.891 234.988C658.191 170.288 570.439 133.939 478.939 133.939C387.44 133.939 299.688 170.288 234.988 234.988C173.384 296.591 137.484 379.092 134.188 465.828C133.913 473.064 139.81 478.939 147.051 478.939C154.292 478.939 160.134 473.064 160.432 465.829C163.712 386.05 196.845 310.215 253.53 253.53C313.312 193.748 394.394 160.162 478.939 160.162C563.484 160.162 644.567 193.748 704.349 253.53C761.034 310.215 794.166 386.05 797.447 465.829C797.745 473.065 803.587 478.939 810.828 478.939Z"
+                    fill="#303030"
+                  />
+                  <g filter="url(#filter0_f_16215_2)">
+                    <path
+                      d="M286.018 192.921C239.163 224.526 200.789 267.157 174.271 317.068C147.754 366.979 133.904 422.64 133.94 479.158L160.162 479.141C160.129 426.919 172.926 375.489 197.429 329.372C221.931 283.255 257.388 243.863 300.682 214.661L286.018 192.921Z"
+                      fill="url(#paint0_linear_16215_2)"
+                    />
+                  </g>
+                  <path
+                    d="M293.35 203.791C289.301 197.788 281.135 196.184 275.29 200.458C233.292 231.17 198.736 271.021 174.271 317.068C149.807 363.115 136.124 414.056 134.18 466.049C133.91 473.285 139.81 479.154 147.051 479.149C154.292 479.145 160.131 473.268 160.424 466.033C162.356 418.337 174.98 371.624 197.429 329.372C219.878 287.119 251.522 250.512 289.965 222.215C295.797 217.922 297.399 209.795 293.35 203.791Z"
+                    fill="url(#paint1_linear_16215_2)"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_f_16215_2"
+                      x="103.94"
+                      y="162.921"
+                      width="226.742"
+                      height="346.236"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood
+                        flood-opacity="0"
+                        result="BackgroundImageFix"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="15"
+                        result="effect1_foregroundBlur_16215_2"
+                      />
+                    </filter>
+                    <linearGradient
+                      id="paint0_linear_16215_2"
+                      x1="134.439"
+                      y1="469.94"
+                      x2="312.939"
+                      y2="194.44"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        stop-color="#425A4B"
+                        offset="0"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#66CF7E"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_16215_2"
+                      x1="134.439"
+                      y1="469.94"
+                      x2="312.939"
+                      y2="194.44"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop
+                        stop-color="#405548"
+                        offset="0"
+                      />
+                      <stop
+                        offset="1"
+                        stop-color="#6ADB83"
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <div class="briefcase__box">
+                <div class="briefcase__label">Доходность</div>
+                <div class="briefcase__value">до 5%</div>
+                <div class="briefcase__badge">Низкий риск</div>
+              </div>
+
+              <div class="briefcase__slider">
+                <input
+                  type="range"
+                  name="risk"
+                  class="briefcase__range"
+                  min="0"
+                  max="100"
+                  value="25"
+                />
+              </div>
+              <div class="briefcase__options">
+                <label class="briefcase__option">
+                  <input
+                    type="radio"
+                    name="manage"
+                    checked
+                  />
+                  <span class="briefcase__radio"></span>
+                  Управляю деньгами сам
+                </label>
+                <label class="briefcase__option">
+                  <input
+                    type="radio"
+                    name="manage"
+                    checked
+                  />
+                  <span class="briefcase__radio"></span>Доверяю управление
+                </label>
+              </div>
+            </div>
+            <div class="briefcase__info">
+              <h2 class="briefcase__title title">
+                Подберите индивидуальный инвестиционный портфель
+              </h2>
+              <p class="briefcase__text subtitle">
+                Покупайте российские и иностранные акции, облигации, валюту и
+                другие продукты в простом и удобном мобильном приложении для iOS
+                и Android
+              </p>
+              <a
+                href="#"
+                class="briefcase__btn btn btn--accent"
+                >Получить портфель</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="statistics">
+        <div class="statistics__container container">
+          <div class="statistics__inner">
+            <div class="statistics__item">
+              <div class="statistics__num">60 000</div>
+              <p class="statistics__text">Активных инвесторов</p>
+            </div>
+            <div class="statistics__item">
+              <div class="statistics__num">150+</div>
+              <p class="statistics__text">Торговых инструментов</p>
+            </div>
+            <div class="statistics__item">
+              <div class="statistics__num">183 000 USD</div>
+              <p class="statistics__text">
+                Финансовый результат одного из инвесторов
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="investment-promo">
+        <div class="investment-promo__container container">
+          <div class="investment-promo__inner">
+            <div class="investment-promo__info">
+              <h2 class="investment-promo__title title">
+                Инвестируйте с телефона
+              </h2>
+              <p class="investment-promo__text subtitle">
+                Покупайте российские и иностранные акции, облигации, валюту и
+                другие продукты в простом и удобном мобильном приложении для iOS
+                и Android.
+              </p>
+            </div>
+            <div class="investment-promo__image">
+              <img
+                class="investment-promo__img"
+                src="images/investment-promo-1.png"
+                alt="ноутбук с графиками"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="investment-promo investment-promo--reversed">
+        <div class="investment-promo__container container">
+          <div class="investment-promo__inner">
+            <div class="investment-promo__info">
+              <h2 class="investment-promo__title title">
+                Инвестируйте с телефона
+              </h2>
+              <p class="investment-promo__text subtitle">
+                Покупайте российские и иностранные акции, облигации, валюту и
+                другие продукты в простом и удобном мобильном приложении для iOS
+                и Android.
+              </p>
+              <div class="investment-promo__btns">
+                <a
+                  href="#"
+                  class="investment-promo__btn investment-promo__btn--ios"
+                  >Скачать для IOS</a
+                >
+                <a
+                  href="#"
+                  class="investment-promo__btn investment-promo__btn--android"
+                  >Скачать для Android</a
+                >
+              </div>
+            </div>
+            <div class="investment-promo__image">
+              <img
+                class="investment-promo__img"
+                src="images/investment-promo-2.png"
+                alt="ноутбук с графиками"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__container container">
+          <div class="faq__wrapper">
+            <div class="faq__info">
+              <h2 class="faq__title title">Мне только спросить</h2>
+              <p class="faq__text">
+                Собрали в подсказках ответы на популярные вопросы об инвестициях
+                и сервисе
+              </p>
+              <a
+                href="#"
+                class="faq__btn btn btn--accent"
+                >Получить консультацию</a
+              >
+            </div>
+            <div class="faq__items">
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Есть ли плата за обслуживание?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Как вывести деньги со счёта?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Какие налоги?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Где хранятся деньги?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Как открыть счёт?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Как пополнить счёт?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question">
+                  <span class="faq__icon">?</span>
+                  Что купить?
+                  <span class="faq__arrow">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="24"
+                        cy="24"
+                        r="22.5"
+                        stroke="#272932"
+                        stroke-width="3"
+                      />
+                      <line
+                        x1="14.4142"
+                        y1="19.5858"
+                        x2="25.3277"
+                        y2="30.4993"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                      <line
+                        x1="22.6486"
+                        y1="30.723"
+                        x2="34.6486"
+                        y2="19.723"
+                        stroke="#272932"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <p class="faq__answer">
+                  Далеко-далеко за словесными, горами в стране гласных и
+                  согласных живут рыбные тексты. Жаренные текст ipsum они
+                  грустный, курсивных рыбного он диких, злых алфавит текста
+                  переулка имени, за от всех меня грамматики решила дороге!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta__container container">
+          <h2 class="cta__title title">Оставьте заявку на открытие счёта</h2>
+          <div class="cta__items">
+            <div class="cta__item">
+              <div class="cta__top">
+                <div class="cta__icon cta__icon--active">
+                  <img
+                    src="icons/cta-1.svg"
+                    alt="иконка бумаг"
+                  />
+                </div>
+                <div class="cta__progess"></div>
+              </div>
+              <div class="cta__bottom">
+                <h3 class="cta__name">Заполните заявку онлайн</h3>
+                <p class="cta__text">
+                  Необходимо: имя, номер телефона, e-mail и пароль для входа.
+                </p>
+              </div>
+            </div>
+            <div class="cta__item">
+              <div class="cta__top">
+                <div class="cta__icon">
+                  <img
+                    src="icons/cta-2.svg"
+                    alt="иконка кошелька"
+                  />
+                </div>
+                <div class="cta__progess"></div>
+              </div>
+              <div class="cta__bottom">
+                <h3 class="cta__name">Откроем счет за 5 минут</h3>
+                <p class="cta__text">
+                  Вы можете использовать несколько платежных систем для
+                  пополнения депозита, включая систему MidexPay и кошелек
+                  Bitcoin.
+                </p>
+              </div>
+            </div>
+            <div class="cta__item">
+              <div class="cta__top">
+                <div class="cta__icon">
+                  <img
+                    src="icons/cta-3.svg"
+                    alt="иконка доллара"
+                  />
+                </div>
+              </div>
+              <div class="cta__bottom">
+                <h3 class="cta__name">
+                  Пополните счёт и начните инвестировать
+                </h3>
+                <p class="cta__text">
+                  Сразу после пополнения депозита будет доступна торговля через
+                  веб-терминал или мобильную платформу.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="cta__form">
+            <input
+              type="text"
+              class="cta__input"
+              placeholder="Ваше имя:"
+            /><input
+              type="text"
+              id="cta__tel"
+              class="cta__input cta__input--tel"
+              placeholder="+7 --- --- -- --"
+            /><input
+              type="text"
+              class="cta__input"
+              placeholder="Email:"
+            />
+            <button
+              type="submit"
+              class="cta__btn btn btn--accent"
+            >
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__wrapper">
+            <div class="footer__left">
+              <div class="footer__image">
+                <img
+                  src="images/footer-logo.svg"
+                  alt="логотип футера"
+                  class="footer__img"
+                />
+              </div>
+              <div class="footer__icons">
+                <a
+                  href="#"
+                  class="footer__icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                  >
+                    <path
+                      stroke="none"
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8"
+                    />
+                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M16.5 7.5v.01" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="footer__icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+                  >
+                    <path
+                      stroke="none"
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="footer__icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-vk"
+                  >
+                    <path
+                      stroke="none"
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M14 19h-4a8 8 0 0 1 -8 -8v-5h4v5a4 4 0 0 0 4 4v-9h4v4.5l.03 0a4.531 4.531 0 0 0 3.97 -4.496h4l-.342 1.711a6.858 6.858 0 0 1 -3.658 4.789a5.34 5.34 0 0 1 3.566 4.111l.434 2.389h-4a4.531 4.531 0 0 0 -3.97 -4.496v4.5l-.03 -.008"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="footer__icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"
+                  >
+                    <path
+                      stroke="none"
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8"
+                    />
+                    <path d="M10 9l5 3l-5 3l0 -6" />
+                  </svg>
+                </a>
+              </div>
+              <a
+                class="footer__politics"
+                href="#"
+              >
+                Политика передачи данных
+              </a>
+            </div>
+            <div class="footer__right">
+              <p class="footer__text">Звонок по России бесплатный</p>
+              <a
+                href="tel:8495212-16-71"
+                class="footer__phone"
+                >8 (495) 212-16-71</a
+              >
+              <a
+                href="tel:8495212-16-71"
+                class="btn btn--accent footer__btn"
+                >Перезвоните мне</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      type="module"
+      src="js/index.js"
+    ></script>
+  </body>
+</html>
