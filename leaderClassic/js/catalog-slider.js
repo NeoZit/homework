@@ -1,7 +1,5 @@
 export const catalogSlider = () => {
   new Swiper(".slider-catalog", {
-    // Optional parameters
-    loop: true,
     slidesPerView: 6,
     spaceBetween: 140,
     mousewheel: {
