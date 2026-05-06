@@ -12,7 +12,7 @@
   position: absolute;
   top: -20%;
   left: 0;
-  background-image: url("/images/bonus-bg-left.png");
+  background-image: url("../../images/bonus-bg-left.png");
   width: 759px;
   height: 1418px;
   z-index: var(--layer-negative);
@@ -22,7 +22,7 @@
   position: absolute;
   top: -30%;
   right: 0;
-  background-image: url("/images/bonus-bg-right.png");
+  background-image: url("../../images/bonus-bg-right.png");
   width: 720px;
   height: 1546px;
   z-index: var(--layer-negative);
