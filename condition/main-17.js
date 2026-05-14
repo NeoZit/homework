@@ -20,7 +20,7 @@ const discount =
   age < 18 ? "10%" : age > 18 && age <= 65 ? "20%" : age > 65 ? "30%" : "false";
 // switch
 let discountSwitch;
-switch (age) {
+switch (true) {
   case age < 18:
     discountSwitch = "10%";
     break;
@@ -47,7 +47,7 @@ console.log(discount, discountSwitch);
 const username = prompt("Имя пользователя:");
 const password = prompt("Пароль:");
 
-if (username === "admin" && password === "123456") {
+if (username === "admin" || username === 'user' && password === "123456") {
   console.log("Доступ разрешен");
 } else {
   console.log("Доступ запрещен");
