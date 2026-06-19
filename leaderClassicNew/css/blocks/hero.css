@@ -1,0 +1,137 @@
+.hero {
+  padding-block: 35px;
+  position: relative;
+}
+.hero__container {
+}
+.container {
+}
+.hero__wrapper {
+  display: flex;
+}
+.hero__info {
+}
+.hero__title {
+  font-weight: 700;
+  font-size: clamp(32px, 0.554rem + 4.02vw, 72px);
+  line-height: 117%;
+  color: var(--main-color);
+  margin-bottom: 13px;
+  max-width: 1000px;
+}
+.hero__box {
+  margin-bottom: 36px;
+  position: relative;
+}
+.hero__arrow {
+  position: absolute;
+  left: -67px;
+  bottom: 0;
+}
+.hero__list {
+}
+.hero__item {
+  font-weight: 300;
+  font-size: clamp(20px, 0.889rem + 1vw, 30px);
+  line-height: 159%;
+  color: var(--secondary-color);
+  position: relative;
+  padding-left: 50px;
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.hero__item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.hero__btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+@media (width < 850px) {
+  .hero__btns {
+    flex-wrap: wrap;
+  }
+}
+.hero__btn {
+}
+
+@media (width < 425px) {
+  .hero__btn {
+    width: 100%;
+  }
+}
+.hero__btn--image {
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+}
+.hero__btn--image::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background-image: url("../../icons/icon-btn.png");
+  width: 101px;
+  height: 104px;
+  display: block;
+}
+.hero__users {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+@media (width < 576px) {
+  .hero__users {
+    flex-wrap: wrap;
+  }
+}
+.hero__avatars {
+  display: flex;
+}
+.hero__avatar {
+  margin-left: -25px;
+}
+
+.hero__avatar:first-child {
+  margin-left: 0;
+}
+.hero__users-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 126%;
+  color: var(--main-color);
+}
+
+@media (width < 576px) {
+  .hero__users-text {
+    font-size: 16px;
+  }
+}
+
+.hero__users-text span {
+  display: block;
+}
+.hero__image {
+  position: absolute;
+  right: 0;
+  top: -20%;
+  z-index: -1;
+}
+@media (width < 768px) {
+  .hero__image {
+    display: none;
+  }
+}

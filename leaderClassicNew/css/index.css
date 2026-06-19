@@ -1,0 +1,24 @@
+/* base */
+
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/global.css";
+
+/* blocks */
+
+@import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/promo.css";
+@import "./blocks/hero.css";
+@import "./blocks/catalog.css";
+@import "./blocks/tools.css";
+@import "./blocks/investment.css";
+@import "./blocks/bonus.css";
+@import "./blocks/advantages.css";
+@import "./blocks/briefcase.css";
+@import "./blocks/statistics.css";
+@import "./blocks/investment-promo.css";
+@import "./blocks/faq.css";
+@import "./blocks/cta.css";
+@import "./blocks/footer.css";
